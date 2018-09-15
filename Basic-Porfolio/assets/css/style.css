@@ -1,0 +1,23 @@
+
+/* here goes nothing */
+
+header {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#nameBar {
+  width: 212px;
+  height: 75px
+  background-color: #4aaaa5;
+  position: fixed;
+  margin: 30px
+}
+
+#profilePic {
+  float: left;
+}
