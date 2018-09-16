@@ -1,23 +1,118 @@
 
 /* here goes nothing */
 
+body {
+  background-image: url(../images/what-the-hex/what-the-hex.png);
+  height: 100%;
+  width: 100%;
+}
+
 header {
   background-color: #ffffff;
+  border-bottom: solid;
   border-color: #cccccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
 }
 
 h1, h2, h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-#nameBar {
-  width: 212px;
-  height: 75px
+.nameBar {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 275px;
+  height: 75px;
+  /* this margin below really messed me up... gotta avoid that*/
+  /* margin: 30px; */
   background-color: #4aaaa5;
-  position: fixed;
-  margin: 30px
+  float: left;
+
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 25px;
+  color: #4aaaa5;
+  margin: 5px 0 5px 0;
+  padding: 15px 0 15px 0;
+}
+
+nav {
+  float:right;
+  position: relative;
+  top: 10px;
+  right: 17%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
 }
 
 #profilePic {
   float: left;
+  padding: 0 8px 8px 0;
+}
+
+.contentBox {
+  width: 960px;
+  background: #ffffff;
+  position: relative;
+  top: 85px;
+  left: 20%;
+  right: -20%;
+  margin-bottom: -60px;
+}
+
+.content {
+  /* width: 960px; */
+  padding: 1%;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  background: #666666;
+  height: 60px;
+  width: 100%;
+  border-top: solid;
+  border-color: #4aaaa5;
+  border-width: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.push {
+  height: 60px;
 }
