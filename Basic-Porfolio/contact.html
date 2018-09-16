@@ -10,24 +10,24 @@
   <body>
 
       <header>
-        <div id="nameBar">
+        <div class="nameBar">
           <h1>Christian Cabrera</h1>
         </div>
-      </header>
 
         <nav>
-          <a href="index.html" target="_parent">About</a>
-          <a href="portfolio.html" target="_parent">Portfolio</a>
-          <a href="contact.html" target="_self">Contact</a>
+          <ul>
+            <li><a href="index.html" target="_self">About</a></li>
+            <li><a href="portfolio.html" target="_parent">Portfolio</a></li>
+            <li><a href="contact.html" target="_parent">Contact</a></li>
+          </ul>
         </nav>
 
-    <article class="contentBox">
+      </header>
+
+    <article class="contentBox" "center">
         <div class="content">
-
-          <div class="contentTop">
-            <h2>Contact</h2>
-          </div>
-
+          <h2>Contact</h2>
+          <hr>
           <div class="contactMe">
             <form class="contactForm" action="/submit-contact" method="post">
               <h3>Name:</h3>
@@ -39,12 +39,11 @@
               <button type="submit" name="submitButton">Submit!</button>
             </form>
           </div>
-
         </div>
     </article>
 
     <footer>
-      <div class="copyright">
+      <div class="copyright" "push">
       <p>Copyright: Christian Cabrera 2018</p>
       </div>
     </footer>
