@@ -18,7 +18,14 @@ header {
   height: 75px;
 }
 
-h1, h2, h3 {
+.topContainer {
+  height: 75px;
+  max-width: 960px;
+  margin: auto;
+  padding: 0;
+}
+
+h1, h2, h3, li{
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -27,16 +34,16 @@ h3 {
 }
 
 .nameBar {
-  position: absolute;
-  top: 0;
-  left: 18.75%;
   width: 275px;
   height: 75px;
-  /* this margin below really messed me up... gotta avoid that*/
-  /* margin: 30px; */
   background-color: #4aaaa5;
   float: left;
-
+  /* I was an idiot and used relative positioning for this and I'm leaving it below to shame myself */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 18.75%; */
+  /* this margin below really messed me up... gotta avoid that*/
+  /* margin: 30px; */
 }
 
 h1 {
@@ -56,9 +63,11 @@ h2 {
 
 nav {
   float:right;
-  position: relative;
-  top: 10px;
-  right: 18.75%;
+  padding-top: 15px;
+  /* I was an idiot and used relative positioning for this and I'm leaving it below to shame myself */
+  /* position: relative; */
+  /* top: 10px; */
+  /* right: 18.75%; */
 }
 
 ul {
@@ -79,15 +88,27 @@ li a {
   padding: 14px 16px;
 }
 
+span {
+
+}
+
 #profilePic {
   float: left;
   padding: 0 8px 8px 0;
+}
+
+#portPic {
+  float: left;
+  width: 274px;
+  height: 205px;
+  margin: 5px 5px 0 0;
 }
 
 .contentBox {
   width: 960px;
   background: #ffffff;
   position: relative;
+  overflow: auto;
   top: 105px;
   /* left: 20%; */
   /* right: -20%;0 */
@@ -122,17 +143,31 @@ input  {
   cursor: pointer;
 }
 
+.portfolioDescBox p {
+  float: left;
+  text-align: center;
+  position: relative;
+  /* bottom: -50px; */
+  /* left: -100px; */
+  padding: 5px;
+  color: #ffffff;
+  /* z-index: .5; */
+  width: 270px;
+  height: 35px;
+  background-color: #4aaaa5;
+}
+
 textarea {
   margin-top: 10px;
   width: 100%;
-  height: 140px
-  ;
+  height: 140px;
   resize: none;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 footer{
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   bottom: 0;
   background: #666666;
   height: 60px;
