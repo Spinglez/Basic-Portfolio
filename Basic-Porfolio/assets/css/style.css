@@ -3,8 +3,10 @@
 
 body {
   background-image: url(../images/what-the-hex/what-the-hex.png);
+  /* Background pattern from Toptal Subtle Patterns */
   height: 100%;
   width: 100%;
+  /* margin: 0; */
 }
 
 header {
@@ -92,28 +94,32 @@ span {
 
 }
 
-#profilePic {
-  float: left;
-  padding: 0 8px 8px 0;
-}
-
-#portPic {
-  float: left;
-  width: 274px;
-  height: 205px;
-  margin: 5px 5px 0 0;
-}
-
 .contentBox {
   width: 960px;
   background: #ffffff;
   position: relative;
-  overflow: auto;
+  /* overflow: visible; */
   top: 105px;
+  height: 900px;
   /* left: 20%; */
   /* right: -20%;0 */
   /* try this one out later */
   margin: 0 auto;
+  /* min-height: 100%; */
+  /* margin-bottom: -90px; */
+}
+
+#portPic {
+  float: left;
+  display: block;
+  width: 274px;
+  height: 205px;
+  /* margin: 30px 30px 0 0; */
+}
+
+#profilePic {
+  float: left;
+  padding: 0 8px 8px 0;
 }
 
 .content {
@@ -122,11 +128,41 @@ span {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.portContainer {
+  float: left;
+  width: 275px;
+  height: 206px;
+  margin: 30px 30px 0 0;
+  position: relative;
+}
+
+.portfolioDescBox {
+  float: left;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 150px;
+  opacity: .9;
+  padding: 2px;
+  color: #ffffff;
+  width: 270px;
+  height: 35px;
+  background-color: #4aaaa5;
+}
+
 input  {
   width: 100%;
   margin: 5px 0 5px 0;
 
   /* padding: 10px 5px 10px 5px; */
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+  resize: none;
+  /* padding: 10px; */
 }
 
 .subButton {
@@ -143,31 +179,8 @@ input  {
   cursor: pointer;
 }
 
-.portfolioDescBox p {
-  float: left;
-  text-align: center;
-  position: relative;
-  /* bottom: -50px; */
-  /* left: -100px; */
-  padding: 5px;
-  color: #ffffff;
-  /* z-index: .5; */
-  width: 270px;
-  height: 35px;
-  background-color: #4aaaa5;
-}
-
-textarea {
-  margin-top: 10px;
-  width: 100%;
-  height: 140px;
-  resize: none;
-  /* padding: 10px; */
-}
-
 footer{
   position: fixed;
-  z-index: 1;
   bottom: 0;
   background: #666666;
   height: 60px;
@@ -175,6 +188,7 @@ footer{
   border-top: solid;
   border-color: #4aaaa5;
   border-width: 10px;
+  /* margin-top: -60px; */
 }
 
 .copyright {
@@ -182,12 +196,17 @@ footer{
   margin-top: 20px;
   color: #ffffff;
 }
-
+/*
 .push {
   height: 60px;
-}
+} */
 
 .contactMe {
   padding: 5px 0 5px 0;
-  margin: 10px: 0 10px 0;
+  margin: 10px 0 10px 0;
+}
+
+.contactMe p {
+  position: absolute;
+  bottom: 0;
 }
