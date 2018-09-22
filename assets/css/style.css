@@ -7,12 +7,23 @@ body {
   /* Background pattern from Toptal Subtle Patterns */
   height: 100%;
   width: 100%;
-  /* margin: 0; */
+  margin: 0;
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -60px;
+}
+
+.firstPara {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  text-indent: 2em;
+  line-height: 1.5em;
 }
 
 p {
-  text-indent: 2em;
-  line-height: 1em;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
+  line-height: 1.5em;
 }
 
 header {
@@ -39,6 +50,7 @@ a:hover {
 
 nav a.active {
   background-color: #4aaaa5;
+  color: #ffffff;
 }
 
 h1, h2, h3, li{
@@ -110,16 +122,31 @@ li a {
   position: relative;
   overflow: visible;
   top: 105px;
-  height: 900px;
-  /* left: 20%; */
-  /* right: -20%;0 */
-  /* try this one out later */
   margin: 0 auto;
-  /* min-height: 100%; */
-  /* margin-bottom: -90px; */
 }
 
-#portPic {
+.contentBox1 {
+  width: 960px;
+  height: 750px;
+  background: #ffffff;
+  position: relative;
+  overflow: visible;
+  top: 105px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+article {
+  padding-bottom: 120px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.portPic  {
   float: left;
   display: block;
   width: 274px;
@@ -130,12 +157,12 @@ li a {
 #profilePic {
   float: left;
   height: 200px;
-  width: 200px;
+  width: 220px;
   padding: 0 8px 8px 0;
 }
 
 .content {
-  /* width: 960px; */
+  background: #ffffff;
   padding: 0 25px 0 25px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -160,6 +187,9 @@ li a {
   width: 270px;
   height: 35px;
   background-color: #4aaaa5;
+}
+.portfolioDescBox p {
+  margin: 5px;
 }
 
 input  {
@@ -191,35 +221,30 @@ textarea {
   cursor: pointer;
 }
 
-footer{
+.footer {
+  height: 60px;
+  margin-top: -120px;
+}
+
+footer {
   position: fixed;
   bottom: 0;
   background: #666666;
-  height: 60px;
+  /* height: 60px; */
   width: 100%;
   border-top: solid;
   border-color: #4aaaa5;
   border-width: 10px;
-  /* margin-top: -60px; */
+  /* margin-top: -120px; */
 }
 
 .copyright {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   color: #ffffff;
 }
-/*
-.push {
-  height: 60px;
-} */
 
 .contactMe {
   padding: 5px 0 5px 0;
   margin: 10px 0 10px 0;
-}
-
-.botblock {
-  display: inline-block;
-  position: relative;
-  bottom: 0px;
 }
