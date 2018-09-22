@@ -5,7 +5,7 @@
 body {
   background-image: url(../images/what-the-hex/what-the-hex.png);
   /* Background pattern from Toptal Subtle Patterns */
-  height: 100%;
+  height: 1080px;
   width: 100%;
   margin: 0;
 }
@@ -125,6 +125,14 @@ li a {
   margin: 0 auto;
 }
 
+/* I was having a real hard time figuring out why my content box
+wasn't showting all the content so I defined a height on the class below.
+I don't like it and I'll compare with others to see what they did.
+I have a sneaking suspission my CSS just got too overwhelmed and it's inherting
+some things I didn't intend it to. Either way Note to self: get rid of this
+and do it right when I revise.
+*/
+
 .contentBox1 {
   width: 960px;
   height: 750px;
@@ -133,11 +141,11 @@ li a {
   overflow: visible;
   top: 105px;
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 article {
-  padding-bottom: 120px;
+  padding-bottom: 20px;
 }
 
 .clearfix::after {
@@ -195,8 +203,6 @@ article {
 input  {
   width: 100%;
   margin: 5px 0 5px 0;
-
-  /* padding: 10px 5px 10px 5px; */
 }
 
 textarea {
@@ -230,12 +236,10 @@ footer {
   position: fixed;
   bottom: 0;
   background: #666666;
-  /* height: 60px; */
   width: 100%;
   border-top: solid;
   border-color: #4aaaa5;
   border-width: 10px;
-  /* margin-top: -120px; */
 }
 
 .copyright {
